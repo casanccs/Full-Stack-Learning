@@ -1,0 +1,52 @@
+<head>
+    <style>
+        #title {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Payment Form</h2>
+    <p>Required fields are followed by *.</p>
+    <h3>Contact Information</h3>
+    <form>
+        <div id="title">
+            <p>Title</p>
+            <ul>
+                <li>
+                    <input type="radio" name="title" value="K" />
+                    King
+                </li>
+                <li>
+                    <input type="radio" name="title" value="Q" />
+                    Queen
+                </li>
+                <li>
+                    <input type="radio" name="title" value="J" />
+                    Joker
+                </li>
+            </ul>
+        </div>
+        <div id="user">
+            <p>Name: *</p>
+            <input type="text" name="name">
+            <p>Email: *</p>
+            <input type="email" name="email">
+            <p>Password: *</p>
+            <input type="text" name="password">
+        </div>
+        <div id="payInfo">
+            <p>Card type: </p>
+            <select id="card" name="userCard">
+                <option value="visa">Visa</option>
+                <option value="mc">Mastercard</option>
+                <option value="amex">American Express</option>
+            </select>
+            <p>Card number: *</p>
+            <input type="tel" name="cardNumber">
+            <p>Expiration Data: *</p>
+            <input type="text" name="expDate" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
+        </div>
+    </form>
+</body>
