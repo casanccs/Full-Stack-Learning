@@ -1,0 +1,11 @@
+.content {
+    background-color: orange;
+}
+.item {
+    border-top: 1px solid black;
+}
+.nav {
+    position: fixed;
+    background-color: gray;
+    color: white;
+}
